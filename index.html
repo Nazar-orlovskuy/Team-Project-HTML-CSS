@@ -19,22 +19,40 @@
     <header class="header" Іван></header>
 
     <main>
-      <section class="hero" Назар>
+      <section class="hero">
         <div class="container">
-          <h1 class="hero-title">EcoTote — Стиль, що не шкодить планеті</h1>
-          <p class="hero-paragraph">
-            Екологічні сумки для тих, хто дбає про майбутнє. Обирайте стиль та
-            відповідальність разом з EcoTote.
-          </p>
-          <button class="hero-btn" type="button">Купити зараз</button>
-          <img
-            class="hero-picture"
-            src="../images/hero-1x.png"
-            srcset="../images/hero-2x.png 2x"
-            alt="ecotote"
-            width="1312"
-            height="498"
-          />
+          <div class="hero-text-picture">
+            <div class="hero-text">
+              <h1 class="hero-title">EcoTote — Стиль, що не шкодить планеті</h1>
+              <div class="hero-text-btn">
+                <p class="hero-paragraph">
+                  Екологічні сумки для тих, хто дбає про майбутнє. Обирайте
+                  стиль та відповідальність разом з EcoTote.
+                </p>
+
+                <button class="hero-btn" type="button">Купити зараз</button>
+              </div>
+            </div>
+            <picture>
+              <source
+                media="(min-width: 1440px)"
+                srcset="../images/hero-1x.png 1x, ../images/hero-2x.png 2x"
+              />
+              <source
+                media="(min-width: 768px)"
+                srcset="
+                  ../images/hero-screen-1x.png 1x,
+                  ../images/hero-screen-2x.png 2x
+                "
+              />
+              <img
+                class="hero-picture"
+                src="../images/hero-mobile-1x.png"
+                srcset="../images/hero-mobile-2x.png 2x"
+                alt="ecotote"
+              />
+            </picture>
+          </div>
         </div>
       </section>
       <section class="feature" Оля></section>
